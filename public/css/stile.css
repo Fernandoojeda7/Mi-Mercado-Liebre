@@ -1,0 +1,433 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+font-family: "Roboto";
+} 
+header{
+    padding: 20px;
+    background-color: #ffff00;
+    margin-bottom: 0%;
+}
+main{
+    background: rgba(182, 178, 178, 0.993);
+}
+.logo-barra{
+    display: flex;
+    
+}
+.logo-barra img{
+    max-width: 50vw;
+}
+.logo-barra input{
+    max-width: 40vw;
+}
+.logo-barra i{
+    max-width: 10vw;
+}
+div#baner{
+    margin-top: 0%;
+}
+.precio-descuento{
+    display: flex;
+    
+}
+p {
+    font-size: 12px;
+}
+
+h2 {
+    font-size: 5vw;
+    font-weight: 400;
+}
+h4 {
+    font-size: 18px;
+    margin-bottom: 0%;
+    width: 30vw; 
+}
+h5 {
+    font-size: 16px;
+    margin-top: 0%;
+    }
+.contener h5{
+    opacity: 0;
+    transition: opacity 450ms;
+}
+.contener h5:hover {
+    opacity: 1;
+}
+h6{
+    font-size: 16px;
+    color: green;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    width: 70vw;
+}
+header nav ul{
+    margin-bottom: 0%;
+}
+div#hamburguesa{
+max-width: 45px;
+padding: 15px 0;
+font-size:  18px;
+border-radius: 8px;
+color: #ffffff;
+background-color: rgb(0, 0, 255);
+text-align: center;
+margin: auto;
+margin-top: 30px;
+}
+#signo {
+    display: flex;
+    justify-content: center;
+
+}
+#titulo{
+    font-size: 24px;
+    text-align: center;
+}
+#parrafo{
+    text-align: center;
+    margin-bottom: 20px;
+}
+div#card {
+    font-size: 48px;
+    text-align: center;
+}
+.contener{
+    background: #ffffff;
+    margin-top: 10px;
+    border: 15px;
+    padding: 10px;
+    margin: 10px;
+    
+}
+.contener:hover{
+    box-shadow: 10px 10px 10px 10px rgb(128, 125, 125);
+}
+.contener img{
+    width: 90vw;
+}
+.track i{
+    display: flex;
+    color:rgb(102, 223, 102);
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b543;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    left: 80%;
+}
+@keyframes track {
+    0% {}
+    100% {transform: rotate(-90deg); opacity: 1}
+}
+.track i:hover{
+    animation: track 3s infinite;
+}
+.formulario-registro, .formulario-login {
+    padding: 20px 15px;
+}
+.control-form{
+    margin-bottom: 10px;
+}
+.control-form label{
+    margin-bottom: 5px;
+    display: block;
+}
+.control-input{
+    width: 65%;
+    padding: 8px;
+}
+.boton-form{
+    background-color: rgb(140, 0, 255);
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+.boton-form-login{
+    background-color: rgb(140, 0, 255);
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 6px 5px;
+    margin: 0 15%;
+    transition: all 0.5s;
+}
+.boton-form-login:hover{
+    background-color: #0022AA;
+}
+@media (max-width: 360px) {
+    body h5{
+        display: none;
+    }
+    header nav {
+        display: none;  
+    }
+    .logo-barra i{
+        max-width: 10vw;
+    }
+    .logo-barra input{
+        max-width: 30vw;
+    }
+    #lupa{
+        background: #ffffff;
+        color: grey;
+        align-items: center;
+        height: 20px;
+        width: 15px;
+        
+    }
+    .logo-barra form{
+        display: flex;
+    }
+
+}
+
+@media (min-width: 361px){
+    body{ box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+    header nav ul{
+        list-style: none;
+    }
+    header nav a{
+        text-decoration: none;
+        color: #222222;
+        font-size: 2vw;
+        margin: 0 3px;
+    }
+    h2{
+        font-size: 3vw;
+    }
+    .navegar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .navegar ul {
+        display: flex;
+    }
+    .contenedor-logo-texto-barra{
+        display: flex;
+        justify-content: space-between;
+    }
+    .contenedor-logo-texto-barra img{
+        width: 30vw;
+    }
+    .logo-barra input{
+        margin: 0 0 0 4vw;
+    }
+    .contenedor-logo-texto-barra input{
+        align-self: center;
+        max-height: 4vh;
+        max-width: 20vw;
+    }
+    #lupa{
+    font-size: 10px;
+    color: gray;
+    margin: 0 0 0 4px;
+    text-align: center;
+    align-self: center;
+    background: #ffffff;
+}
+    #signo h2{
+        font-size: 1.5vw;
+        align-self: center;
+    }
+    #mano-dinero{
+        font-size: 2vw;
+        align-self: center;
+    }
+    div#hamburguesa {
+        display: none;
+    }
+    .contenedor-section-ab{
+        display: flex;
+        max-width: 100vw;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-self: center;
+    }
+    .contener{
+        display: flex;
+        flex-direction: column;
+        max-width: 44%;
+        border-top: solid 1px #ebebeb;
+        }
+    .contener img{
+        justify-content: center;
+        align-self: center;
+        width: 50%;
+    }
+    .track i{
+        display: flex;
+        color:rgb(102, 223, 102);
+        font-size: 12px;
+        padding: 5px;
+        width: 25px;
+        height: 25px;
+        border: 1px solid #39b543;
+        background-color: #FFF;
+        border-radius: 50%;
+        position: relative;
+        left: 70%;
+    }
+    h4 {
+        font-size: 13px;
+        margin-bottom: 0%;
+        width: 30vw; 
+    }
+    h5 {
+        font-size: 12px;
+        margin-top: 0%;
+        }
+    h6 {
+        font-size: 12px;
+        color: green;
+        margin-top: 0%;
+        margin-bottom: 5%;
+        width: 70vw;
+    
+    }
+    
+}
+@media (min-width: 769px) {
+    body{ box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+    div#hamburguesa {
+    display: none;
+}
+
+header nav ul{
+    list-style: none;
+}
+header nav a{
+    text-decoration: none;
+    color: #222222;
+    font-size: 18px;
+    margin: 5px;
+}
+h2{
+    font-size: 2vw;
+}
+.navegar{
+    display: flex;
+    justify-content: space-between;
+}
+.navegar ul {
+    display: flex;
+}
+.anclas-der li{
+    margin: 0 8px;
+}
+.contenedor-logo-texto-barra{
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor-logo-texto-barra img{
+    width: 30vw;
+}
+
+.logo-barra input{
+    margin: 0 0 0 4vw;
+}
+.contenedor-logo-texto-barra input{
+    align-self: center;
+    max-height: 4vh;
+    max-width: 22vw;
+}
+#lupa{
+font-size: 20px;
+color: gray;
+margin: 0 0 0 4px;
+text-align: center;
+align-self: center;
+background: #ffffff;
+}
+#signo h2{
+    font-size: 2vw;
+    align-self: center;
+}
+#mano-dinero{
+    font-size: 2vw;
+    align-self: center;
+}
+div#hamburguesa {
+    display: none;
+}
+.contenedor-section-ab{
+    display: flex;
+    max-width: 100vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+}
+.contener{
+    display: flex;
+    flex-direction: column;
+    max-width: 22%;
+    border-top: solid 1px #ebebeb;
+    }
+.contener img{
+    justify-content: center;
+    align-self: center;
+    width: 50%;
+}
+.track i{
+    display: flex;
+    color:rgb(102, 223, 102);
+    font-size: 12px;
+    padding: 5px;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #39b543;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    left: 70%;
+}
+h4 {
+    font-size: 13px;
+    margin-bottom: 0%;
+    width: 30vw; 
+}
+h5 {
+    font-size: 12px;
+    margin-top: 0%;
+    }
+h6 {
+    font-size: 12px;
+    color: green;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    width: 70vw;
+
+}
+.control-input{
+    width: 40%;
+    padding: 8px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    font-size: 12px;
+}
+#titulo{
+    font-size: 18px;
+}
+div#card{
+    font-size: 40px;
+    transition: all 0.5s;
+}
+div#card:hover{
+    color: rgb(140, 0, 255);
+}
+footer p{
+    padding: 0px 0px 10px 10px;
+}
+}
